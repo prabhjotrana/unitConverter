@@ -12,7 +12,7 @@ const massEl = document.getElementById("mass");
 
 const convertBtn = document.getElementById("convert-btn");
 console.log(convertBtn);
-function convert(){
+export function convert(){
     const lengthInMeter=(inputEl.value/3.281).toFixed(3);
     const lengthInFeet=(inputEl.value*3.281).toFixed(3);
     const volumeInGallons=(inputEl.value*0.264).toFixed(3);
@@ -26,4 +26,3 @@ function convert(){
 }
 
 convertBtn.addEventListener("click",convert);
-window.convert=convert;
